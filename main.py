@@ -11,7 +11,7 @@
 hint: что такое print?
 """
 
-# Замените это своим кодом
+# print('"Hello World"')
 
 """
  _____         _      _____ 
@@ -21,13 +21,23 @@ hint: что такое print?
   | | (_| \__ \   <  ./ /___
   \_/\__,_|___/_|\_\ \_____/
 
-Напишите рограмму, которая выводит числа от 1 до введенного пользователем. Для чисел, кратных 3, выводится "Fizz",'
+Напишите программу, которая выводит числа от 1 до введенного пользователем. Для чисел, кратных 3, выводится "Fizz",'
 для кратных 5 — "Buzz", а для чисел, кратных 3 и 5 — "FizzBuzz"
 
 hint: цикл, если и "%"
 """
 
-# Замените это своим кодом
+# count = int(input("Введи число больше 1: "))
+# for i in range(1, count + 1):
+#   if i % 3 == 0 and i % 5 == 0:
+#     print(i, "FizzBuzz")
+#     continue
+#   elif i % 3 == 0:
+#     print(i, "Fizz")
+#     continue
+#   elif i % 5 == 0:
+#     print(i, "Buzz" )
+
 
 """
  _____         _      _____ 
@@ -42,7 +52,20 @@ hint: цикл, если и "%"
 hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%81%D0%BD%D1%8B%D0%B5-%D0%B3%D0%BE%D0%B4%D1%8B
 """
 
-# Замените это своим кодом
+# def is_leap_year(year):
+
+#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#         return True
+#     else:
+#         return False
+# try:
+#     user_input = int(input("Введи год: "))
+#     if is_leap_year(user_input):
+#         print(f"{user_input} год високосный.")
+#     else:
+#         print(f"{user_input} год не високосный.")
+# except ValueError:
+#     print("Это не число даун")
 
 """
  _____         _        ___ 
@@ -57,7 +80,11 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-# Замените это своим кодом
+def is_polydrome():
+  item = input("Напиши полиндром: ")
+  result = "".join(list(reversed(item)))
+  
+  if(item.lower() == result.lower())
 
 """
  _____         _      _____ 
