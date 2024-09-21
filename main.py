@@ -15,7 +15,7 @@ hint: что такое print?
 
 """
  _____         _      _____ 
-|_   _|       | |    / __  \
+|_   _|       | |    / __  
   | | __ _ ___| | __ `' / /'
   | |/ _` / __| |/ /   / /  
   | | (_| \__ \   <  ./ /___
@@ -43,7 +43,7 @@ hint: цикл, если и "%"
  _____         _      _____ 
 |_   _|       | |    |____ |
   | | __ _ ___| | __     / /
-  | |/ _` / __| |/ /     \ \
+  | |/ _` / __| |/ /     \ 
   | | (_| \__ \   <  .___/ /
   \_/\__,_|___/_|\_\ \____/ 
 
@@ -80,17 +80,22 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-def is_polydrome():
-  item = input("Напиши полиндром: ")
-  result = "".join(list(reversed(item)))
+# def is_polydrome():
+#   item = input("Напиши полиндром: ")
+#   result = "".join(list(reversed(item)))
   
-  if(item.lower() == result.lower())
+#   if(item.lower() == result.lower()):
+#     print('Да, это палиндромм!')
+#   else:
+#     print('Это не палиндром!')
+    
+# is_polydrome()
 
 """
  _____         _      _____ 
 |_   _|       | |    |  ___|
   | | __ _ ___| | __ |___ \ 
-  | |/ _` / __| |/ /     \ \
+  | |/ _` / __| |/ /     \ 
   | | (_| \__ \   <  /\__/ /
   \_/\__,_|___/_|\_\ \____/ 
 
@@ -99,13 +104,20 @@ def is_polydrome():
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
 
-# Замените это своим кодом
+# def factorial(number):
+#   result = 1
+#   for item in range(1, number + 1):
+#     result *= item
+  
+#   print(f"{number}! = {result}")
+  
+# factorial(int(input("Введите число для вычисления факториала: ")))
 
 """
  _____         _       ____ 
 |_   _|       | |     / ___|
   | | __ _ ___| | __ / /___ 
-  | |/ _` / __| |/ / | ___ \
+  | |/ _` / __| |/ / | ___ 
   | | (_| \__ \   <  | \_/ |
   \_/\__,_|___/_|\_\ \_____/
 
@@ -115,7 +127,19 @@ hint: x <= 1 - не простые числа
 hint 2: %
 """
 
-# Замените это своим кодом
+# def is_number_simple(num):
+#   divider = []
+#   if num >= 1:
+#     for i in range(1, 9):
+#       if num % i == 0:
+#         divider.append(i)
+        
+#   if len(divider) == 2:
+#     print('Это простое число', divider)
+#   else:
+#     print('Это не постое число', divider)
+
+# is_number_simple(int(input('Введите число, а мы проверим является ли оно простым: ')))
 
 """
  _____         _      ______
@@ -130,7 +154,15 @@ hint 2: %
 hint: циклы
 """
 
-# Замените это своим кодом
+# def sum_number(num):
+#     list_num = [int(item) for item in list(str(num))]
+#     result = 0
+#     for item in list_num:
+#       result += item
+    
+#     print(f'Сумма всех цифр числа равна: {result}')
+    
+# sum_number(int(input("Введи число, а мы найдем сумму всех его цифр: ")))
 
 """
  _____         _      _____ 
@@ -146,8 +178,7 @@ hint: 1, 1, 2, 3 https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D
 hint 2: попробуйте решить с помощью рекурсии
 """
 
-# Замените это своим кодом
-
-
-
-
+# Генерация числа по колличеству элементов
+# result = [0, 1]
+# def generator(num):
+#   if num >= 2:
