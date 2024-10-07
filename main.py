@@ -8,7 +8,7 @@
 
 Напишите программу, которая выводит в консоль "Hello world"
 
-hint: что такое print?
+hint: что такое print?s
 """
 
 # print('"Hello World"')
