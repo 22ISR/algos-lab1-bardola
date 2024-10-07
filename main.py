@@ -8,7 +8,7 @@
 
 Напишите программу, которая выводит в консоль "Hello world"
 
-hint: что такое print?sjjfgkjf
+hint: что такое print?
 """
 
 # print('"Hello World"')
@@ -80,16 +80,17 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-# def is_polydrome():
-#   item = input("Напиши полиндром: ")
-#   result = "".join(list(reversed(item)))
+def is_polydrome():
+  item = input("Напиши полиндром: ")
+  result = "".join(reversed(item))
+  print(result)
   
-#   if(item.lower() == result.lower()):
-#     print('Да, это палиндромм!')
-#   else:
-#     print('Это не палиндром!')
+  if(item.lower() == result.lower()):
+    print('Да, это палиндромм!')
+  else:
+    print('Это не палиндром!')
     
-# is_polydrome()
+is_polydrome()
 
 """
  _____         _      _____ 
@@ -178,7 +179,6 @@ hint: 1, 1, 2, 3 https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D
 hint 2: попробуйте решить с помощью рекурсии
 """
 
-# Генерация числа по колличеству элементов
-# result = [0, 1]
-# def generator(num):
-#   if num >= 2:
+# result = []
+
+# def fibonachi
